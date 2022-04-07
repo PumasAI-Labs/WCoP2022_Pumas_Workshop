@@ -8,12 +8,9 @@
 
 # Call Necessary Packages 
 using CSV
-using Chain
-using DataFrames
+using DataFramesMeta
 using Dates
-using NCA
-using NCAUtilities
-using NCA.Unitful
+using Pumas
 using PumasUtilities
 
 
@@ -29,7 +26,7 @@ using PumasUtilities
 
 
 # Load Data
-df_bolus_sd = CSV.read("WCOP//nca_data//iv_bolus_sd.csv", DataFrame, missingstrings=["NA", ".", ""])
+df_bolus_sd = CSV.read("nca_data/iv_bolus_sd.csv", DataFrame, missingstrings=["NA", ".", ""])
 
 
 
