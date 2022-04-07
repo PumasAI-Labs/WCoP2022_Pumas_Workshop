@@ -191,7 +191,6 @@ sim_plot(model,
                     ylabel = "Predicted Concentration (ng/mL)"))
 #
 
-# note - unlike Phoenix you don't need all your dvs to be in one column
 # example - pkdata = read_pumas(simdf, dvs=[:parent, :metabolite], cvs=[:isPM, :wt])
 
 

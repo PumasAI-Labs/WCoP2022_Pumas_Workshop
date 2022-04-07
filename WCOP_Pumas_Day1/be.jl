@@ -1,12 +1,8 @@
 
 # Call Other Necessary Packages 
 using CSV
-using Chain
-using DataFrames
-using Dates
-using NCA
-using NCAUtilities
-using NCA.Unitful
+using DataFramesMeta
+using Pumas
 using PumasUtilities
 using Bioequivalence 
 #using Bioequivalence.GLM: lm, @formula
