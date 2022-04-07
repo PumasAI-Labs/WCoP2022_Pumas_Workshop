@@ -1,1 +1,1 @@
-# WCoP2022_Pumas_Workshop
+# WCoP2022 Pumas Workshop
