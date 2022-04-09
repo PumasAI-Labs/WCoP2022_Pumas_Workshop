@@ -1,4 +1,6 @@
-# This is a comment
+# Don't forget to check: https://tutorials.pumas.ai/html/DataWranglingInJulia/01-intro.html
+# Additionally: https://tutorials.pumas.ai/html/DataWranglingInJulia/02-julia-syntax.html
+# Also: https://tutorials.pumas.ai/html/DataWranglingInJulia/03-functions.html
 
 ##########################
 #      Variable types    #
