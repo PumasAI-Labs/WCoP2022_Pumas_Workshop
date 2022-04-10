@@ -153,6 +153,7 @@ mdl_1cmp_comb = @model begin
 end
 
 
+
 params_1cmp_comb = (
     tvvc = 5,
     tvcl = 0.2,
@@ -218,7 +219,7 @@ infer_1cmp_comb.vcov # variance-covariance matrix
 
 inspect_1cmp_comb = inspect(pkfit_1cmp_comb)
 goodness_of_fit(inspect_1cmp_comb)
-DataFrame(inspect_1cmp_comb)
+dfinsp = DataFrame(inspect_1cmp_comb)
 DataFrame(inspect_1cmp_comb, include_events = false)
 DataFrame(inspect_1cmp_comb, include_covariates = false)
 
