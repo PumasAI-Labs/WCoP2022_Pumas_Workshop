@@ -6,7 +6,7 @@ using CairoMakie
 using AlgebraOfGraphics
 
 # 1. Read the dataset in
-pkpd_df = CSV.read("/home/jrun/data/code/WCoP2022_Pumas_Workshop/WCOP_Pumas_Day4/pkpd_data/pkpd_idr1.csv", DataFrame)
+pkpd_df = CSV.read("pkpd_data/pkpd_idr1.csv", DataFrame)
 
 # 2. Map to read_pumas for population. Only use PK
 pkpdpop = read_pumas(pkpd_df, observations = [:dv], covariates = [:BSL])
@@ -76,8 +76,7 @@ goodness_of_fit(pkinspect, ols = false)
 # Assume that the pk model above is the final model
 
 # 7. Lets extract the individual parameters
-
-indpars = reduce(vcat, DataFrame.(icoef(pkfit)))
+indpars = DataFrame(pkinspect.icoefs)
 select!(indpars, :id, :CL, :Vc, :Q, :Vp)
 indpars[!, :id] = parse.(Int64, indpars.id)
 
