@@ -81,7 +81,7 @@ param_summary  = summarize(nca_for_poppk.reportdf,
 
 ##########################################################
 #                                                        #
-#                   1 COMPRATMENT MODEL                  #
+#                   1 COMPARTMENT MODEL                  #
 #                                                        #
 ##########################################################
 
